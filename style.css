@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,900&display=swap');
+
+
+/*
+#1C19E0
+#F04895
+#C257FA
+#50B7FA
+#51F0CB
+*/
+
+:root{
+    --verdeclaro1: #51F0CB;
+    --azulclaro1: #50B7FA;
+    --roxoclaro1:#C257FA;
+    --rosa1:#F04895;
+    --azul1: #1C19E0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--azul1);
+    font-family:'Roboto', sans-serif;
+}
+
+header{
+     background-image: linear-gradient(to bottom,var(--rosa1),var(--roxoclaro1));
+     min-height: 150px;/*altura minima*/
+     text-align: center;/*Alinhamento de texto*/
+     padding-top: 25px;/*espaçamento dentro da caixa na parte superior*/
+
+    }
+/* (direção, a 1 cor e, 2 cor)*/
+
+header > h1{
+    color:black;
+    font-weight:900px;/*Peso da fonte, espessura do negrito*/
+    margin-bottom: 20px;/* Espaço até o próximo elemento, no caso o inferior*/
+}
+
+header > p{
+    color: blue;
+
+}
+
+header p{
+    color: green;
+}
+
+nav{
+    background-color:blue ;
+    padding: 7px;/*mesmo espaçamento para os 4 lados*/
+    box-shadow: 1px 4px 6px;/*pode também colocar a cor no final*/
+}
+
+nav > a{
+    color: red;
+    padding: 7px;
+    text-decoration: none;/*Sublinhado, none, overline, underline*/
+    font-weight: bold;
+    border-radius: 15px;/*arredondamento das vértices*/
+    transition-duration: 0.5s;/*duração da transação*/
+}
+
+nav > a:hover{/*pseudo -class- adiciona um estado especial*/
+    background-color:mediumblue ;
+    color: black;
+    /*font-size: 20px*/
+}
+
+main{
+    background-color: white;
+    min-width: 320px;/*Largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin: auto;/*Nesse contexto, utilizada para centralizar o elemento*/
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 4px 3px;
+    text-align: center;
+
+
+}
+
+
+main h2{
+    background-image:linear-gradient(to right,var(--verdeclaro1), var(--azulclaro1));
+    text-align: center;/*Alinhamento de texto, centralizado*/
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;/*Alinhamento de texto: center, left right justify*/
+    text-indent: 40px;
+    margin: 15px 0px;
+    line-height: 1.5em;/*altura da linha*/
+}
+
+img{
+    width: 37%;
+    border: 2px double darkblue;/*borda: espessura estilo*/
+
+}
+
+iframe{
+    width: 77%;
+}
+
+iframe{
+    margin-bottom: 20px;
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+aside{
+    background-color: var(--azul1), var(--rosa1) ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside > ul{
+    list-style-position: inside;/*coloca os marcadores da lista dentro da caixa do elemento*/
+    text-align: justify;
+}
+
+aside > h3{
+    background-color: var(--azul1);/*color*/
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+    border-radius: 10px 10px 0px opx;
+}
+
+footer{
+    font-size: 12px;
+    background-color:mediumblue ;
+    padding: 5px;
+}
+
+footer > a{
+    font-weight: bold;
+    text-decoration: none;
+}
